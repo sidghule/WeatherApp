@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>WEATHER APP</h1>
+    <div class="wrapper">
+
+        
+        <div class="tab-container">
+            <button class="button yourweather">Your Weather</button>
+            <button class="button searchweather">Search Weather</button>
+        </div>
+        <div class="infocaontainer">
+            <div class="grant-access-conatiner  sub-container">
+                <img class="img" src="location.png" alt="">
+                <p>Grant Location Access</p>
+                <p>Allow Access To Get Weather Info</p>
+                <button id="GAbtn">Grant Access</button>
+            </div>
+            <div class="search-weather-container notactive">
+                <form class="form">
+                    <input id="searchcity" type="text" placeholder="Search Your Weather">
+                    <button id="searchbtn">
+                        <img class="img1" src="search.png" alt="">
+                    </button>
+                </form>
+                    
+                
+            </div>
+            <div class="loading-container">
+                <span class="loader"></span>
+                
+            </div>
+            <div class="your-weather-container notactive">
+                <div class="country">
+                    <p country id="cityName"></p>
+                    <img class="img" img src="" alt="">
+                </div>
+                <p howitis></p>
+                <img class="img" icon src=" " alt="">
+                <p temp></p>
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <img src="wind.png" alt="">
+                        <p>Windspeed</p>
+                        <p windSpeed></p>
+
+                    </div>
+                    <div class="parameter">
+                        <img src="humidity.png" alt="">
+                        <p>Humidity</p>
+                        <p Humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="cloud.png" alt="">
+                        <p>Clouds</p>
+                        <p clouds></p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
